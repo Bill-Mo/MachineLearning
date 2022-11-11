@@ -6,9 +6,9 @@ from sklearn.model_selection import train_test_split
 a = 10**-2
 b = 10**2
 lam = 5
-X = np.random.rand(100, 100)
-y = np.arange(100)
-
+X = np.random.rand(200, 100)
+y = np.arange(200)
+print(X.shape, y.shape)
 xtr, xts, ytr, yts = train_test_split(X, y, test_size=0.33)
 
 
